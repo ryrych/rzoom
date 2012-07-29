@@ -1,0 +1,130 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta content="rzoom, javascript zoom, pure javascript zoom, image magnifier, pure javascript magnifier" name="keywords">
+		<meta content="rzoom is a pure JavaScript image magnifier" name="description">			
+		<title>rzoom – a pure JavaScript image magnifier</title>
+		<link type="text/css" rel="stylesheet" href="css/reset.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="widget/css/style.css" />		
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1><em>rzoom</em> – a pure JavaScript image magnifier</h1>		
+	
+			<div id="info">
+				<ul>
+					<li><strong>Author</strong>: Wojciech <em>rrh</em> Ryrych</li>
+					<li><strong>Version</strong>: 1.0 (<a href="https://github.com/ryrych/rzoom/zipball/1.0" onclick="_gaq.push(['_trackEvent', 'pobrania', 'rcarousel', '1.1']);">download</a>)</li>
+					<li><strong>Source code</strong>: <a href="https://github.com/ryrych/rzoom">browse on github</a></li>
+					<li><strong>Bug tracker</strong>: <a href="https://github.com/ryrych/rzoom/issues">report a bug</a></li>
+					<li><strong>License</strong>: MIT</li>
+				</ul>
+			</div>
+			
+			<h2>News</h2>
+			<div id="news" class="section">
+				<ul>
+					<li>July 29, 2012 – <em>rzoom</em> has been released publicly</li>			
+				</ul>
+			</div>
+			
+			<h2>About</h2>
+			<div class="section">
+				<p>
+					<em>rzoom</em> is a pure and simple JavaScript image magnifier. You can extend it and modify easily. It supports modern browsers including IE7.
+				</p>
+			</div>
+			
+			<h2>Examples</h2>
+			<div id="photos">
+				<ul>
+					<li><img src="img/01.jpg" style="width: 300px; height: auto" onload="magnifier.add( this );" /></li>
+					<li><img src="img/02.jpg" style="width: auto; height: 300px" onload="magnifier.add( this );" /></li>
+					<li><img src="img/03.jpg" style="width: 300px; height: auto" onload="magnifier.add( this );" /></li>
+				</ul>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<h2>Features</h2>
+			<div id="features" class="section">
+				<dl>
+					<dt>Pure JavaScript</dt>
+					<dd>Sometimes you can’t use a widget written in <em>jQuery</em> or other libraries. <em>rzoom</em> will come in handy in such situations.</dd>
+					
+					<dt>Zoom in / zoom out</dt>
+					<dd>With the mouse roll you can zoom in or out easily.</dd>
+				
+					<dt>Automatic detection</dt>
+					<dd>If a scaled image is smaller than its original, <em>rzoom</em> is automatically disabled.</dd>
+				
+					<dt>Supports many browsers</dt>
+					<dd>When I tested it in January it worked even in IE7. But IE7 is not relevant these days</dd>
+				
+					<dt>Remembers settings</dt>
+					<dd>When you have many images, each image remembers its zoom level.</dd>
+					
+					<dt>Respects ‘auto’ CSS value</dt>
+					<dd><em>rzoom</em> respects CSS <code>auto</code> value of <code>width</code> or <code>hight</code> attributes if you want to preserve the aspect ratio.</dd>
+					
+					<dt>2 ways of initiating</dt>
+					<dd>You can use the <code>add</code> method either in <code>onload</code> event handler or on its own.</dd>
+				</dl>
+			</div>
+			
+			<h2>How To Use</h2>
+			<div class="section">
+				<p>
+					Load the widget first:
+				</p>
+				
+<pre>
+&lt;script type="text/javascript" src="widget/lib/magnifier.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+	var magnifier = magnifier();
+&lt;/script&gt;
+</pre>
+
+				<p>
+					Initiate it on an image:
+				</p>
+
+<pre>
+&lt;img src="01.jpg" style="width: 400px; height: auto" onload="magnifier.add( this );" /&gt;
+&lt;img src="02.jpg" style="width: auto; height: 400px" onload="magnifier.add( this );" /&gt;
+</pre>
+
+				<p>
+					You don’t need to use <code>add</code> method in the <code>onload</code> event handler. You can use it anywhere. Just pass it an <code>IMG</code> <em>DOM</em> element.
+				</p>
+			</div>
+			
+			<h2>What Can I Do With It?</h2>
+			<div class="section">
+				<p>
+					You can use, modify and fork <em>rzoom</em>. But respect the license!
+				</p>
+			</div>
+			
+			<h2>Disclaimer</h2>
+			<div class="section">
+				<p>
+					The widget provided is as is. Don’t expect me to implement special features for you. Don’t expect me to help you to implement it on your site. <em>rzoom</em> is not meant for beginners who don’t read manuals. <strong>Before you ask</strong>, read the documentation carefully.
+				</p>
+			</div>
+			
+			<h2>Contact</h2>
+			<div class="section">
+				<p>
+					If you need to contact me, send me a PM on github. Advice, ideas how to improve it are welcomed!
+				</p>
+			</div>				
+		</div>
+	<script type="text/javascript" src="widget/lib/magnifier.js"></script>
+	<script type="text/javascript">
+		var magnifier = magnifier();
+	</script>
+	</body>
+</html>

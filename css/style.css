@@ -1,0 +1,125 @@
+body {
+	/*background: url(grid.png) repeat-y center top;*/
+	font: 16px/1.5 'Droid Sans', sans-serif;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*---headings---*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+h1 {
+	font-size: 4.5em; /*72px → 72px ÷ 16px = 4.5em*/
+	line-height: 1em;
+}
+
+h2 {
+	font-size: 3em; /*48px → 48px ÷ 16px = 3em*/
+	line-height: 1em;
+
+}
+
+h3 {
+	font-size: 1.5em; /*24px → 24px ÷ 16px = 1.5em*/
+	line-height: 1em;
+}
+
+p, ul, ol, pre, table, .section {
+    margin-bottom: 24px;
+}
+
+h2 + .section {
+	margin-left: 60px
+}
+
+h3 + .section {
+	margin-left: 60px
+}
+
+h4 + .section {
+	margin-left: 60px;
+}
+
+ol {
+	list-style: decimal outside;
+}
+
+a:link {
+	color: #FF5C43;
+}
+
+a:visited {
+	color: #FF2019;
+}
+
+a[href]:hover {
+	color: #FF2019;
+}
+
+a:active {
+	color: #FF2019;
+}
+
+pre {
+	font-family: 'Droid Sans Mono', monospace;
+	font-size: 14px;
+	line-height: 24px;
+	background-color: #E5E5E5;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap !important; /* Mozilla */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word;    /* IE 5.5+*/
+}
+
+code {
+	font-family: 'Droid Sans Mono', monospace;
+	font-size: 14px;
+	background-color: #E5E5E5;
+}
+
+strong {
+	font-weight: bold;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 30px;
+}
+
+#photos > ul {
+	float: left;
+}
+
+#photos > ul > li {
+	width: 300px;
+	height: 300px;
+	border: 5px solid #FF5C43;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+	line-height: 300px;
+}
+
+#photos > ul > li:last-child {
+	margin-right: 0;
+}
+
+#photos > ul > li > img {
+	line-height: 0;
+	vertical-align: middle;
+}
+
+.clear {
+	clear: both;
+}
