@@ -1,0 +1,28 @@
+#ui-magnifier {
+	font: 14px sans-serif;
+	background-color: #fff;
+	color: #fff;
+	border: 2px solid #ce1313;
+	position: absolute;
+	display: none;
+	margin: 0;
+	padding: 0;
+	z-index: 9999;
+	float: left;
+}
+
+#ui-magnifier-container {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+#ui-magnifier-caption {
+	background-color: #ce1313;
+	text-align: center;
+	width: 240px;
+	height: 20px;
+	line-height: 20px;
+	margin: 0;
+	padding: 5px;
+}
